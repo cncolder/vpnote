@@ -1,0 +1,20 @@
+{
+  "name": "vpnote",
+  "description": "VPN note web application in Node.js",
+  "version": "0.0.1",
+  "private": true, 
+  "author": "Colder <cncolder@gmail.com>",
+  "contributors": [ 
+    { "name": "Colder", "email": "cncolder@gmail.com" }
+  ],
+  "dependencies": {
+    "express": "2.5.2",
+    "coffeekup": "0.3.0"
+  },
+  "devDependencies": {
+  },
+  "keywords": ["vpn"],
+  "repository": "git://github.com/cncolder/vpnote",
+  "main": "index",
+  "engines": { "node": ">= 0.6.0" }
+}
