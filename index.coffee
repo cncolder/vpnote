@@ -30,5 +30,5 @@ unless module.parent
   else
     app.listen port
     console.log """
-      Express server listening on port #{app.address()?.port} in #{app.settings.env} mode.
+      Express server listening on port #{port} in #{app.settings.env} mode.
     """

@@ -1,0 +1,129 @@
+Dec 10 21:12:25 localhost xl2tpd[2338]: control_finish: Peer requested tunnel 4 twice, ignoring second one.
+Dec 10 21:12:26 localhost xl2tpd[2338]: start_pppd: I'm running: 
+Dec 10 21:12:26 localhost xl2tpd[2338]: "/usr/sbin/pppd" 
+Dec 10 21:12:26 localhost xl2tpd[2338]: "passive" 
+Dec 10 21:12:26 localhost xl2tpd[2338]: "nodetach" 
+Dec 10 21:12:26 localhost xl2tpd[2338]: "192.168.0.1:192.168.0.2" 
+Dec 10 21:12:26 localhost xl2tpd[2338]: "refuse-pap" 
+Dec 10 21:12:26 localhost xl2tpd[2338]: "auth" 
+Dec 10 21:12:26 localhost xl2tpd[2338]: "require-chap" 
+Dec 10 21:12:26 localhost xl2tpd[2338]: "debug" 
+Dec 10 21:12:26 localhost xl2tpd[2338]: "file" 
+Dec 10 21:12:26 localhost xl2tpd[2338]: "/etc/ppp/options.l2tpd.lns" 
+Dec 10 21:12:26 localhost xl2tpd[2338]: "/dev/pts/0" 
+Dec 10 21:12:26 localhost pppd[11435]: using channel 22
+Dec 10 21:12:26 localhost pppd[11435]: sent [LCP ConfReq id=0x1 <asyncmap 0x0> <auth chap MD5> <magic 0x61578525> <pcomp> <accomp>]
+Dec 10 21:12:26 localhost pppd[11435]: rcvd [LCP ConfReq id=0x1 <asyncmap 0x0> <magic 0x3202539a> <pcomp> <accomp>]
+Dec 10 21:12:26 localhost pppd[11435]: sent [LCP ConfAck id=0x1 <asyncmap 0x0> <magic 0x3202539a> <pcomp> <accomp>]
+Dec 10 21:12:27 localhost pppd[11435]: rcvd [LCP ConfAck id=0x1 <asyncmap 0x0> <auth chap MD5> <magic 0x61578525> <pcomp> <accomp>]
+Dec 10 21:12:27 localhost pppd[11435]: sent [LCP EchoReq id=0x0 magic=0x61578525]
+Dec 10 21:12:27 localhost pppd[11435]: sent [CHAP Challenge id=0x30 <1c2112bf9dad1a66a23598e0c3465b5bec3f110e57>, name = "l2tp"]
+Dec 10 21:12:27 localhost pppd[11435]: rcvd [LCP EchoReq id=0x0 magic=0x3202539a]
+Dec 10 21:12:27 localhost pppd[11435]: sent [LCP EchoRep id=0x0 magic=0x61578525]
+Dec 10 21:12:27 localhost pppd[11435]: rcvd [LCP EchoRep id=0x0 magic=0x3202539a]
+Dec 10 21:12:27 localhost pppd[11435]: rcvd [CHAP Response id=0x30 <1f1a6f206424cfb3240fc7ad06d65e29>, name = "colder"]
+Dec 10 21:12:27 localhost pppd[11435]: sent [CHAP Success id=0x30 "Access granted"]
+Dec 10 21:12:27 localhost pppd[11435]: sent [CCP ConfReq id=0x1 <deflate 15> <deflate(old#) 15> <bsd v1 15>]
+Dec 10 21:12:27 localhost pppd[11435]: sent [IPCP ConfReq id=0x1 <compress VJ 0f 01> <addr 192.168.0.1>]
+Dec 10 21:12:27 localhost pppd[11435]: rcvd [IPCP ConfReq id=0x1 <addr 0.0.0.0> <ms-dns1 0.0.0.0> <ms-dns2 0.0.0.0>]
+Dec 10 21:12:27 localhost pppd[11435]: sent [IPCP ConfNak id=0x1 <addr 192.168.0.3> <ms-dns1 8.8.8.8> <ms-dns2 8.8.4.4>]
+Dec 10 21:12:27 localhost pppd[11435]: rcvd [IPV6CP ConfReq id=0x1 <addr fe80::c574:2903:77cc:4a57>]
+Dec 10 21:12:27 localhost pppd[11435]: sent [LCP ProtRej id=0x2 80 57 01 01 00 0e 01 0a c5 74 29 03 77 cc 4a 57]
+Dec 10 21:12:27 localhost pppd[11435]: rcvd [LCP ProtRej id=0x2 80 fd 01 01 00 0f 1a 04 78 00 18 04 78 00 15 03 2f]
+Dec 10 21:12:27 localhost pppd[11435]: Protocol-Reject for 'Compression Control Protocol' (0x80fd) received
+Dec 10 21:12:27 localhost pppd[11435]: rcvd [IPCP ConfRej id=0x1 <compress VJ 0f 01>]
+Dec 10 21:12:27 localhost pppd[11435]: sent [IPCP ConfReq id=0x2 <addr 192.168.0.1>]
+Dec 10 21:12:28 localhost pppd[11435]: rcvd [IPCP ConfReq id=0x2 <addr 192.168.0.3> <ms-dns1 8.8.8.8> <ms-dns2 8.8.4.4>]
+Dec 10 21:12:28 localhost pppd[11435]: sent [IPCP ConfAck id=0x2 <addr 192.168.0.3> <ms-dns1 8.8.8.8> <ms-dns2 8.8.4.4>]
+Dec 10 21:12:28 localhost pppd[11435]: rcvd [IPCP ConfAck id=0x2 <addr 192.168.0.1>]
+Dec 10 21:12:28 localhost pppd[11435]: Script /etc/ppp/ip-up started (pid 11441)
+Dec 10 21:12:28 localhost pppd[11435]: Script /etc/ppp/ip-up finished (pid 11441), status = 0x0
+Dec 10 21:12:57 localhost pppd[11435]: sent [LCP EchoReq id=0x1 magic=0x61578525]
+Dec 10 21:12:57 localhost pppd[11435]: rcvd [LCP EchoRep id=0x1 magic=0x3202539a]
+Dec 10 21:13:27 localhost pppd[11435]: sent [LCP EchoReq id=0x2 magic=0x61578525]
+Dec 10 21:13:27 localhost pppd[11435]: rcvd [LCP EchoRep id=0x2 magic=0x3202539a]
+Dec 10 21:13:47 localhost pppd[11435]: rcvd [LCP EchoReq id=0x1 magic=0x3202539a]
+Dec 10 21:13:47 localhost pppd[11435]: sent [LCP EchoRep id=0x1 magic=0x61578525]
+Dec 10 21:13:57 localhost pppd[11435]: sent [LCP EchoReq id=0x3 magic=0x61578525]
+Dec 10 21:13:57 localhost pppd[11435]: rcvd [LCP EchoRep id=0x3 magic=0x3202539a]
+Dec 10 21:14:07 localhost pppd[11435]: rcvd [LCP EchoReq id=0x2 magic=0x3202539a]
+Dec 10 21:14:07 localhost pppd[11435]: sent [LCP EchoRep id=0x2 magic=0x61578525]
+Dec 10 21:14:27 localhost pppd[11435]: sent [LCP EchoReq id=0x4 magic=0x61578525]
+Dec 10 21:14:27 localhost pppd[11435]: rcvd [LCP EchoReq id=0x3 magic=0x3202539a]
+Dec 10 21:14:27 localhost pppd[11435]: sent [LCP EchoRep id=0x3 magic=0x61578525]
+Dec 10 21:14:27 localhost pppd[11435]: rcvd [LCP EchoRep id=0x4 magic=0x3202539a]
+Dec 10 21:14:47 localhost pppd[11435]: rcvd [LCP EchoReq id=0x4 magic=0x3202539a]
+Dec 10 21:14:47 localhost pppd[11435]: sent [LCP EchoRep id=0x4 magic=0x61578525]
+Dec 10 21:14:57 localhost pppd[11435]: sent [LCP EchoReq id=0x5 magic=0x61578525]
+Dec 10 21:14:57 localhost pppd[11435]: rcvd [LCP EchoRep id=0x5 magic=0x3202539a]
+Dec 10 21:15:07 localhost pppd[11435]: rcvd [LCP EchoReq id=0x5 magic=0x3202539a]
+Dec 10 21:15:07 localhost pppd[11435]: sent [LCP EchoRep id=0x5 magic=0x61578525]
+Dec 10 21:15:27 localhost pppd[11435]: sent [LCP EchoReq id=0x6 magic=0x61578525]
+Dec 10 21:15:27 localhost pppd[11435]: rcvd [LCP EchoRep id=0x6 magic=0x3202539a]
+Dec 10 21:15:57 localhost pppd[11435]: sent [LCP EchoReq id=0x7 magic=0x61578525]
+Dec 10 21:15:57 localhost pppd[11435]: rcvd [LCP EchoRep id=0x7 magic=0x3202539a]
+Dec 10 21:16:27 localhost pppd[11435]: sent [LCP EchoReq id=0x8 magic=0x61578525]
+Dec 10 21:16:27 localhost pppd[11435]: rcvd [LCP EchoRep id=0x8 magic=0x3202539a]
+Dec 10 21:16:27 localhost pppd[11435]: rcvd [LCP EchoReq id=0x6 magic=0x3202539a]
+Dec 10 21:16:27 localhost pppd[11435]: sent [LCP EchoRep id=0x6 magic=0x61578525]
+Dec 10 21:16:57 localhost pppd[11435]: sent [LCP EchoReq id=0x9 magic=0x61578525]
+Dec 10 21:16:57 localhost pppd[11435]: rcvd [LCP EchoRep id=0x9 magic=0x3202539a]
+Dec 10 21:17:27 localhost pppd[11435]: sent [LCP EchoReq id=0xa magic=0x61578525]
+Dec 10 21:17:27 localhost pppd[11435]: rcvd [LCP EchoRep id=0xa magic=0x3202539a]
+Dec 10 21:17:57 localhost pppd[11435]: sent [LCP EchoReq id=0xb magic=0x61578525]
+Dec 10 21:17:58 localhost pppd[11435]: rcvd [LCP EchoRep id=0xb magic=0x3202539a]
+Dec 10 21:18:27 localhost pppd[11435]: sent [LCP EchoReq id=0xc magic=0x61578525]
+Dec 10 21:18:28 localhost pppd[11435]: rcvd [LCP EchoRep id=0xc magic=0x3202539a]
+Dec 10 21:18:57 localhost pppd[11435]: sent [LCP EchoReq id=0xd magic=0x61578525]
+Dec 10 21:18:57 localhost pppd[11435]: rcvd [LCP EchoRep id=0xd magic=0x3202539a]
+Dec 10 21:19:27 localhost pppd[11435]: sent [LCP EchoReq id=0xe magic=0x61578525]
+Dec 10 21:19:27 localhost pppd[11435]: rcvd [LCP EchoRep id=0xe magic=0x3202539a]
+Dec 10 21:19:47 localhost pppd[11435]: rcvd [LCP EchoReq id=0x7 magic=0x3202539a]
+Dec 10 21:19:47 localhost pppd[11435]: sent [LCP EchoRep id=0x7 magic=0x61578525]
+Dec 10 21:19:57 localhost pppd[11435]: sent [LCP EchoReq id=0xf magic=0x61578525]
+Dec 10 21:19:57 localhost pppd[11435]: rcvd [LCP EchoRep id=0xf magic=0x3202539a]
+Dec 10 21:20:07 localhost pppd[11435]: rcvd [LCP EchoReq id=0x8 magic=0x3202539a]
+Dec 10 21:20:07 localhost pppd[11435]: sent [LCP EchoRep id=0x8 magic=0x61578525]
+Dec 10 21:20:27 localhost pppd[11435]: sent [LCP EchoReq id=0x10 magic=0x61578525]
+Dec 10 21:20:27 localhost pppd[11435]: rcvd [LCP EchoRep id=0x10 magic=0x3202539a]
+Dec 10 21:20:28 localhost pppd[11435]: rcvd [LCP EchoReq id=0x9 magic=0x3202539a]
+Dec 10 21:20:28 localhost pppd[11435]: sent [LCP EchoRep id=0x9 magic=0x61578525]
+Dec 10 21:20:48 localhost pppd[11435]: rcvd [LCP EchoReq id=0xa magic=0x3202539a]
+Dec 10 21:20:48 localhost pppd[11435]: sent [LCP EchoRep id=0xa magic=0x61578525]
+Dec 10 21:20:57 localhost pppd[11435]: sent [LCP EchoReq id=0x11 magic=0x61578525]
+Dec 10 21:20:57 localhost pppd[11435]: rcvd [LCP EchoRep id=0x11 magic=0x3202539a]
+Dec 10 21:21:08 localhost pppd[11435]: rcvd [LCP EchoReq id=0xb magic=0x3202539a]
+Dec 10 21:21:08 localhost pppd[11435]: sent [LCP EchoRep id=0xb magic=0x61578525]
+Dec 10 21:21:27 localhost pppd[11435]: sent [LCP EchoReq id=0x12 magic=0x61578525]
+Dec 10 21:21:27 localhost pppd[11435]: rcvd [LCP EchoRep id=0x12 magic=0x3202539a]
+Dec 10 21:21:57 localhost pppd[11435]: sent [LCP EchoReq id=0x13 magic=0x61578525]
+Dec 10 21:21:59 localhost pppd[11435]: rcvd [LCP EchoRep id=0x13 magic=0x3202539a]
+Dec 10 21:21:59 localhost pppd[11435]: rcvd [LCP TermReq id=0x3 "User request"]
+Dec 10 21:21:59 localhost pppd[11435]: Script /etc/ppp/ip-down started (pid 11448)
+Dec 10 21:21:59 localhost pppd[11435]: sent [LCP TermAck id=0x3]
+Dec 10 21:21:59 localhost pppd[11435]: Script /etc/ppp/ip-down finished (pid 11448), status = 0x0
+Dec 10 21:22:00 localhost xl2tpd[2338]: result_code_avp: result code out of range (768 0 14).  Ignoring.
+Dec 10 21:22:00 localhost xl2tpd[2338]: control_finish: Peer tried to disconnect without specifying result code.
+Dec 10 21:22:00 localhost xl2tpd[2338]: result_code_avp: result code out of range (256 0 14).  Ignoring.
+Dec 10 21:22:00 localhost xl2tpd[2338]: control_finish: Peer tried to disconnect without specifying result code.
+Dec 10 21:22:00 localhost xl2tpd[2338]: check_control: Received out of order control packet on tunnel 4 (got 4, expected 6)
+Dec 10 21:22:00 localhost xl2tpd[2338]: handle_packet: bad control packet!
+Dec 10 21:22:02 localhost xl2tpd[2338]: check_control: Received out of order control packet on tunnel 4 (got 4, expected 6)
+Dec 10 21:22:02 localhost xl2tpd[2338]: handle_packet: bad control packet!
+Dec 10 21:22:02 localhost xl2tpd[2338]: child_handler : pppd exited for call 10673 with code 16
+Dec 10 21:22:02 localhost xl2tpd[2338]: read_packet: Error 9 (Bad file descriptor)
+Dec 10 21:22:02 localhost xl2tpd[2338]: last message repeated 10 times
+Dec 10 21:22:02 localhost xl2tpd[2338]: read_packet: Too many errors.  Declaring call dead.
+Dec 10 21:22:06 localhost xl2tpd[2338]: check_control: Received out of order control packet on tunnel 4 (got 4, expected 6)
+Dec 10 21:22:06 localhost xl2tpd[2338]: handle_packet: bad control packet!
+Dec 10 21:22:26 localhost xl2tpd[2338]: Terminating pppd: sending TERM signal to pid 11435
+Dec 10 21:22:26 localhost xl2tpd[2338]: pppd 11435 successfully terminated
+Dec 10 21:22:27 localhost xl2tpd[2338]: get_call: can't find call 44349 in tunnel 46088#012 (ref=0/0)
+Dec 10 21:22:27 localhost xl2tpd[2338]: check_control: Received out of order control packet on tunnel 4 (got 4, expected 6)
+Dec 10 21:22:31 localhost xl2tpd[2338]: get_call: can't find call 44349 in tunnel 46088#012 (ref=0/0)
+Dec 10 21:22:31 localhost xl2tpd[2338]: check_control: Received out of order control packet on tunnel 4 (got 4, expected 6)
+Dec 10 21:22:31 localhost xl2tpd[2338]: Unable to deliver closing message for tunnel 46088. Destroying anyway.
+Dec 10 21:22:35 localhost xl2tpd[2338]: get_call: can't find call 44349 in tunnel 46088#012 (ref=0/0)
+Dec 10 21:22:35 localhost xl2tpd[2338]: check_control: Received out of order control packet on tunnel 4 (got 4, expected 6)
+Dec 10 21:22:39 localhost xl2tpd[2338]: network_thread: unable to find call or tunnel to handle packet.  call = 44349, tunnel = 46088 Dumping.
+Dec 10 21:22:43 localhost xl2tpd[2338]: network_thread: unable to find call or tunnel to handle packet.  call = 44349, tunnel = 46088 Dumping.

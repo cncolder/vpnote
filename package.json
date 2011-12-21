@@ -9,9 +9,11 @@
   ],
   "dependencies": {
     "express": "2.5.2",
+    "coffee-script": "1.1.3",
     "coffeekup": "0.3.0"
   },
   "devDependencies": {
+    "vows": ""
   },
   "keywords": ["vpn"],
   "repository": "git://github.com/cncolder/vpnote",

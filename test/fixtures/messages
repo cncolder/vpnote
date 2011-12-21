@@ -1,0 +1,13 @@
+Dec 10 17:50:22 localhost rsyslogd: [origin software="rsyslogd" swVersion="4.2.0" x-pid="1918" x-info="http://www.rsyslog.com"] rsyslogd was HUPed, type 'lightweight'.
+Dec 10 21:12:26 localhost pppd[11435]: pppd 2.4.5 started by root, uid 0
+Dec 10 21:12:26 localhost pppd[11435]: Using interface ppp0
+Dec 10 21:12:26 localhost pppd[11435]: Connect: ppp0 <--> /dev/pts/0
+Dec 10 21:12:27 localhost pppd[11435]: Unsupported protocol 'IPv6 Control Protovol' (0x8057) received
+Dec 10 21:12:28 localhost pppd[11435]: local  IP address 192.168.0.1
+Dec 10 21:12:28 localhost pppd[11435]: remote IP address 192.168.0.3
+Dec 10 21:21:59 localhost pppd[11435]: LCP terminated by peer (User request)
+Dec 10 21:21:59 localhost pppd[11435]: Connect time 9.6 minutes.
+Dec 10 21:21:59 localhost pppd[11435]: Sent 618273 bytes, received 178046 bytes.
+Dec 10 21:22:02 localhost pppd[11435]: Connection terminated.
+Dec 10 21:22:02 localhost pppd[11435]: Modem hangup
+Dec 10 21:22:02 localhost pppd[11435]: Exit.
