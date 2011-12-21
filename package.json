@@ -8,12 +8,13 @@
     { "name": "Colder", "email": "cncolder@gmail.com" }
   ],
   "dependencies": {
-    "express": "2.5.2",
-    "coffee-script": "1.1.3",
-    "coffeekup": "0.3.0"
+    "express": ">= 2.5.2",
+    "coffee-script": ">= 1.1.3",
+    "coffeekup": ">= 0.3.0",
+    "cookie-sessions": ">= 0.0.2"
   },
   "devDependencies": {
-    "vows": ""
+    "vows": ">= 0.6.0"
   },
   "keywords": ["vpn"],
   "repository": "git://github.com/cncolder/vpnote",
