@@ -17,7 +17,7 @@ switch process.env.NODE_ENV ? 'development'
   when 'staging'
     port ?= 3002
   when 'production'
-    port ?= 3003
+    port ?= 80
 
 unless module.parent
   if cluster.isMaster
